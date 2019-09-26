@@ -8,7 +8,7 @@ def nyc_pigeon_organizer(data)
     data[q].each_key {|w| #subcategories of above(for example purple/grey/white)
       
       
-      w_string = w.to_s #"male"
+      w_string = w.to_s 
       
       data[q][w].map {|e| #pigeon names
         
@@ -16,11 +16,11 @@ def nyc_pigeon_organizer(data)
           
           
           if (newHash[e][q])
-            puts "\n\n\n%%%%%%%%%%%%%%%\n\nMade it to if newHash[][]"
+            #puts "\n\n\n%%%%%%%%%%%%%%%\n\nMade it to if newHash[][]"
             
             if (newHash[e][q].include?(w_string))
             else
-              puts "\n\n\n\nmade it here to #{w_string}\n\n\n"
+              #puts "\n\n\n\nmade it here to #{w_string}\n\n\n"
               newHash[e][q].push(w_string)
             end
           else
