@@ -8,7 +8,7 @@ def nyc_pigeon_organizer(data)
     data[q].each_key {|w| #subcategories of above(for example purple/grey/white)
       
       
-      w_string = w.to_s #"male"
+      w_string = w.to_s 
       
       data[q][w].map {|e| #pigeon names
         
